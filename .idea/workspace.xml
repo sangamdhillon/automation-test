@@ -1,7 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="61f56425-3512-4812-8245-b977ab38094e" name="Default Changelist" comment="" />
+    <list default="true" id="61f56425-3512-4812-8245-b977ab38094e" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/ItemPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/ItemPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/ListPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/ListPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/LocationPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/LocationPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/WelcomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/WelcomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/utils/MobileFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/MobileFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/CompareList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/CompareList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/Readme.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/Readme.txt" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,6 +24,14 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
@@ -29,7 +48,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/test/resources/apps" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -42,7 +61,7 @@
   </component>
   <component name="RunManager" selected="TestNG.CompareHotArtistList.compareList">
     <configuration name="BaseClass.sampleTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="touchtunes" />
+      <module name="automation" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="tests.*" />
@@ -60,7 +79,7 @@
       </method>
     </configuration>
     <configuration name="CompareHotArtistList.compareList" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="touchtunes" />
+      <module name="automation" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="tests.*" />
@@ -78,7 +97,7 @@
       </method>
     </configuration>
     <configuration name="Tests" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="touchtunes" />
+      <module name="automation" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="tests.*" />
@@ -95,7 +114,7 @@
       </method>
     </configuration>
     <configuration name="Tests.testOne" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="touchtunes" />
+      <module name="automation" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="tests.*" />
@@ -146,6 +165,17 @@
     </task>
     <servers />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="WindowStateProjectService">
     <state x="462" y="207" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1584057714114">
       <screen x="0" y="23" width="1440" height="814" />
@@ -156,6 +186,10 @@
     </state>
     <state x="184" y="96" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.823@0.23.1440.823" timestamp="1583971596474" />
     <state x="184" y="96" width="1071" height="698" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.825@0.23.1440.825" timestamp="1583968628046" />
+    <state x="381" y="23" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1584330778348">
+      <screen x="0" y="23" width="1440" height="798" />
+    </state>
+    <state x="381" y="23" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.23.1440.798@0.23.1440.798" timestamp="1584330778348" />
     <state x="450" y="269" key="#xdebugger.evaluate" timestamp="1584059939571">
       <screen x="0" y="23" width="1440" height="816" />
     </state>
@@ -234,25 +268,35 @@
     </state>
     <state x="208" y="23" width="1024" height="823" key="SettingsEditor/0.23.1440.823@0.23.1440.823" timestamp="1583971735563" />
     <state x="208" y="23" width="1024" height="825" key="SettingsEditor/0.23.1440.825@0.23.1440.825" timestamp="1583968663243" />
-    <state x="399" y="262" key="com.intellij.ide.util.TipDialog" timestamp="1584041583082">
-      <screen x="0" y="23" width="1440" height="811" />
+    <state x="399" y="259" key="com.intellij.ide.util.TipDialog" timestamp="1584330305197">
+      <screen x="0" y="23" width="1440" height="798" />
     </state>
+    <state x="399" y="259" key="com.intellij.ide.util.TipDialog/0.23.1440.798@0.23.1440.798" timestamp="1584330305197" />
+    <state x="399" y="261" key="com.intellij.ide.util.TipDialog/0.23.1440.806@0.23.1440.806" timestamp="1584216709055" />
     <state x="399" y="262" key="com.intellij.ide.util.TipDialog/0.23.1440.811@0.23.1440.811" timestamp="1584041583082" />
     <state x="399" y="266" key="com.intellij.ide.util.TipDialog/0.23.1440.821@0.23.1440.821" timestamp="1583956207691" />
     <state x="399" y="266" key="com.intellij.ide.util.TipDialog/0.23.1440.822@0.23.1440.822" timestamp="1583946966072" />
     <state x="399" y="267" key="com.intellij.ide.util.TipDialog/0.23.1440.823@0.23.1440.823" timestamp="1583965966580" />
     <state x="399" y="268" key="com.intellij.ide.util.TipDialog/0.23.1440.825@0.23.1440.825" timestamp="1583968701887" />
+    <state x="386" y="65" width="667" height="729" key="find.popup" timestamp="1584331417310">
+      <screen x="0" y="23" width="1440" height="798" />
+    </state>
+    <state x="386" y="65" width="667" height="729" key="find.popup/0.23.1440.798@0.23.1440.798" timestamp="1584331417310" />
+    <state x="475" y="150" key="git4idea.branch.GitSmartOperationDialog" timestamp="1584332378979">
+      <screen x="0" y="23" width="1440" height="798" />
+    </state>
+    <state x="475" y="150" key="git4idea.branch.GitSmartOperationDialog/0.23.1440.798@0.23.1440.798" timestamp="1584332378979" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/pages/WelcomePage.java</url>
-          <line>23</line>
+          <line>19</line>
           <option name="timeStamp" value="9" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/tests/CompareHotArtistList.java</url>
+          <url>file://$PROJECT_DIR$/src/test/java/tests/CompareList.java</url>
           <line>25</line>
           <option name="timeStamp" value="10" />
         </line-breakpoint>

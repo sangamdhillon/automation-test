@@ -5,22 +5,21 @@ import io.appium.java_client.MobileElement;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import utils.MobileDriver;
 
-public class JukeboxListPage {
+public class ListPage {
 
-    public JukeboxListPage(AppiumDriver<MobileElement> driver){
+    public ListPage(AppiumDriver<MobileElement> driver){
         PageFactory.initElements(new AppiumFieldDecorator(driver), this);
     }
 
-    @FindBy(xpath = "//android.widget.TextView[@resource-id='com.touchtunes.android:id/item_venue_name' and @text='The Sports Page']")
-    public MobileElement jukeBoxListItem;
+    @FindBy(xpath = "//android.widget.TextView[@resource-id='com.android:id/item_venue_name' and @text='Test']")
+    public MobileElement listItem;
 
-    @FindBy(id = "com.touchtunes.android:id/idb_text_view")
+    @FindBy(id = "com.android:id/idb_text_view")
     public MobileElement confirmBtn;
 
-    public void clickJukeBoxListItem() {
-        jukeBoxListItem.click();
+    public void clickListItem() {
+        listItem.click();
     }
 
     public void clickConfirmBtn() {

@@ -6,53 +6,52 @@ import io.appium.java_client.pagefactory.AppiumFieldDecorator;
 import org.openqa.selenium.By;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import utils.MobileDriver;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class JukeBoxPage {
+public class ItemPage {
 
-    public JukeBoxPage(AppiumDriver<MobileElement> driver){
+    public ItemPage(AppiumDriver<MobileElement> driver){
         PageFactory.initElements(new AppiumFieldDecorator(driver), this);
     }
 
-    @FindBy(xpath = "//android.widget.TextView[@resource-id='com.touchtunes.android:id/widget_item_round_title']")
-    public List<MobileElement> hotItemsCircleList;
+    @FindBy(xpath = "//android.widget.TextView[@resource-id='com.android:id/widget_item_round_title']")
+    public List<MobileElement> circleList;
 
-    @FindBy(xpath = "//android.widget.TextView[@resource-id='com.touchtunes.android:id/home_row_title']")
-    public MobileElement hotItemsBtn;
+    @FindBy(xpath = "//android.widget.TextView[@resource-id='com.android:id/home_row_title']")
+    public MobileElement itemsBtn;
 
     @FindBy(xpath = "//android.widget.TextView[@text='Hot Artists']")
-    public MobileElement hotArtistsBtn;
+    public MobileElement hotItemBtn;
 
     @FindBy(xpath = "//android.widget.ListView/descendant::android.widget.TextView")
-    public List<MobileElement> hotItemsList;
+    public List<MobileElement> itemsList;
 
-    By by_homeRow = By.xpath("//android.widget.TextView[@resource-id='com.touchtunes.android:id/home_row_title']");
+    By by_homeRow = By.xpath("//android.widget.TextView[@resource-id='com.android:id/home_row_title']");
 
-    public List<String> getHotItemsCircleList() {
+    public List<String> getCircleList() {
         List<String> itemsList = new ArrayList<String>();
-        for(MobileElement hotItem: hotItemsCircleList) {
+        for(MobileElement hotItem: circleList) {
             itemsList.add(hotItem.getText());
         }
         return itemsList;
     }
 
     public void clickHotItemsBtn() {
-        hotItemsBtn.click();
+        itemsBtn.click();
     }
 
     public void clickHotArtistsBtn() {
-        hotArtistsBtn.click();
+        hotItemBtn.click();
     }
 
-    public List<String> getHotItemsVerticalList() {
-        List<String> itemsList = new ArrayList<String>();
-        for(MobileElement hotItem: hotItemsList) {
-            itemsList.add(hotItem.getText());
+    public List<String> getVerticalList() {
+        List<String> list = new ArrayList<String>();
+        for(MobileElement hotItem: itemsList) {
+            list.add(hotItem.getText());
         }
-        return itemsList;
+        return list;
     }
 
     public By getBy_homeRow() {

@@ -1,9 +1,11 @@
 package tests;
 
 import org.testng.Assert;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
-import pages.JukeBoxPage;
-import pages.JukeboxListPage;
+import pages.ItemPage;
+import pages.ListPage;
 import pages.LocationPage;
 import pages.WelcomePage;
 import utils.MobileDriver;
@@ -11,43 +13,41 @@ import utils.MobileFactory;
 
 import java.net.MalformedURLException;
 import java.util.List;
-import java.util.concurrent.TimeUnit;
 
 import static utils.Util.scrollDown;
 import static utils.Util.scrollNClick;
 
-public class CompareHotArtistList {
+public class CompareList {
+
+    WelcomePage welcomePage = new WelcomePage(MobileDriver.getDriver());
+    LocationPage locationPage = new LocationPage(MobileDriver.getDriver());
+    ListPage listPage = new ListPage(MobileDriver.getDriver());
+    ItemPage itemPage = new ItemPage(MobileDriver.getDriver());
+
+    @BeforeTest
+    public void launchApp() throws MalformedURLException {
+        MobileFactory.launchApp();
+    }
 
     @Test
-    public void compareList() throws InterruptedException, MalformedURLException {
+    public void compareList() throws InterruptedException {
 
-        MobileFactory.launchApp();
-
-        WelcomePage welcomePage = new WelcomePage(MobileDriver.getDriver());
-        LocationPage locationPage = new LocationPage(MobileDriver.getDriver());
-        JukeboxListPage jukeboxListPage = new JukeboxListPage(MobileDriver.getDriver());
-        JukeBoxPage jukeBoxPage = new JukeBoxPage(MobileDriver.getDriver());
-
-        TimeUnit.SECONDS.sleep(2);
         welcomePage.clickSkip();
-        TimeUnit.SECONDS.sleep(2);
         locationPage.clickGotItBtn();
-        TimeUnit.SECONDS.sleep(2);
         locationPage.clickAllowBtn();
-        TimeUnit.SECONDS.sleep(2);
-        jukeboxListPage.clickJukeBoxListItem();
-        TimeUnit.SECONDS.sleep(2);
-        jukeboxListPage.clickConfirmBtn();
-        TimeUnit.SECONDS.sleep(2);
+        listPage.clickListItem();
+        listPage.clickConfirmBtn();
         scrollDown();
-        List<String> hotItemsCircleList = jukeBoxPage.getHotItemsCircleList();
-        scrollNClick(jukeBoxPage.getBy_homeRow(), "Hot at The Sports Page");
-        TimeUnit.SECONDS.sleep(2);
-        jukeBoxPage.clickHotArtistsBtn();
-        TimeUnit.SECONDS.sleep(2);
-        List<String> hotItemsVerticalList = jukeBoxPage.getHotItemsVerticalList();
-        Assert.assertEquals(hotItemsCircleList, hotItemsVerticalList);
+        List<String> circleList = itemPage.getCircleList();
+        scrollNClick(itemPage.getBy_homeRow(), "Test Page");
+        itemPage.clickHotArtistsBtn();
+        List<String> verticalList = itemPage.getVerticalList();
+        Assert.assertEquals(circleList, verticalList);
 
+    }
+
+    @AfterTest
+    public void closeApp() {
         MobileFactory.closeApp();
     }
 
